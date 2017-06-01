@@ -12,6 +12,20 @@
 		0C83B42C1EE0BF770065D398 /* SherpanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C83B4291EE0BF770065D398 /* SherpanyViewController.swift */; };
 		0C83B42E1EE0C0230065D398 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C83B42D1EE0C0230065D398 /* Protocols.swift */; };
 		0C83B4311EE0C0AC0065D398 /* Sherpany.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0C83B42F1EE0C0AC0065D398 /* Sherpany.xcdatamodeld */; };
+		0C83B4411EE0C13B0065D398 /* Address+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C83B4331EE0C13B0065D398 /* Address+CoreDataClass.swift */; };
+		0C83B4421EE0C13B0065D398 /* Address+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C83B4341EE0C13B0065D398 /* Address+CoreDataProperties.swift */; };
+		0C83B4431EE0C13B0065D398 /* Album+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C83B4351EE0C13B0065D398 /* Album+CoreDataClass.swift */; };
+		0C83B4441EE0C13B0065D398 /* Album+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C83B4361EE0C13B0065D398 /* Album+CoreDataProperties.swift */; };
+		0C83B4451EE0C13B0065D398 /* Company+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C83B4371EE0C13B0065D398 /* Company+CoreDataClass.swift */; };
+		0C83B4461EE0C13B0065D398 /* Company+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C83B4381EE0C13B0065D398 /* Company+CoreDataProperties.swift */; };
+		0C83B4471EE0C13B0065D398 /* Geolocation+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C83B4391EE0C13B0065D398 /* Geolocation+CoreDataClass.swift */; };
+		0C83B4481EE0C13B0065D398 /* Geolocation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C83B43A1EE0C13B0065D398 /* Geolocation+CoreDataProperties.swift */; };
+		0C83B4491EE0C13B0065D398 /* Photo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C83B43B1EE0C13B0065D398 /* Photo+CoreDataClass.swift */; };
+		0C83B44A1EE0C13B0065D398 /* Photo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C83B43C1EE0C13B0065D398 /* Photo+CoreDataProperties.swift */; };
+		0C83B44B1EE0C13B0065D398 /* Post+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C83B43D1EE0C13B0065D398 /* Post+CoreDataClass.swift */; };
+		0C83B44C1EE0C13B0065D398 /* Post+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C83B43E1EE0C13B0065D398 /* Post+CoreDataProperties.swift */; };
+		0C83B44D1EE0C13B0065D398 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C83B43F1EE0C13B0065D398 /* User+CoreDataClass.swift */; };
+		0C83B44E1EE0C13B0065D398 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C83B4401EE0C13B0065D398 /* User+CoreDataProperties.swift */; };
 		0CDDC2681EDB1DAF0095BEBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDDC2671EDB1DAF0095BEBE /* AppDelegate.swift */; };
 		0CDDC2701EDB1DAF0095BEBE /* Sherpany.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0CDDC26E1EDB1DAF0095BEBE /* Sherpany.xcdatamodeld */; };
 		0CDDC2721EDB1DAF0095BEBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CDDC2711EDB1DAF0095BEBE /* Assets.xcassets */; };
@@ -35,6 +49,20 @@
 		0C83B4291EE0BF770065D398 /* SherpanyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SherpanyViewController.swift; path = ViewControllers/SherpanyViewController.swift; sourceTree = "<group>"; };
 		0C83B42D1EE0C0230065D398 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		0C83B4301EE0C0AC0065D398 /* Sherpany.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sherpany.xcdatamodel; sourceTree = "<group>"; };
+		0C83B4331EE0C13B0065D398 /* Address+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Address+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0C83B4341EE0C13B0065D398 /* Address+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Address+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0C83B4351EE0C13B0065D398 /* Album+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Album+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0C83B4361EE0C13B0065D398 /* Album+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Album+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0C83B4371EE0C13B0065D398 /* Company+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Company+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0C83B4381EE0C13B0065D398 /* Company+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Company+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0C83B4391EE0C13B0065D398 /* Geolocation+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Geolocation+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0C83B43A1EE0C13B0065D398 /* Geolocation+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Geolocation+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0C83B43B1EE0C13B0065D398 /* Photo+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0C83B43C1EE0C13B0065D398 /* Photo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0C83B43D1EE0C13B0065D398 /* Post+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0C83B43E1EE0C13B0065D398 /* Post+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0C83B43F1EE0C13B0065D398 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0C83B4401EE0C13B0065D398 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0CDDC2641EDB1DAF0095BEBE /* Sherpany.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sherpany.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CDDC2671EDB1DAF0095BEBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CDDC26F1EDB1DAF0095BEBE /* Sherpany.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sherpany.xcdatamodel; sourceTree = "<group>"; };
@@ -74,6 +102,27 @@
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
+		0C83B4321EE0C13B0065D398 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0C83B4331EE0C13B0065D398 /* Address+CoreDataClass.swift */,
+				0C83B4341EE0C13B0065D398 /* Address+CoreDataProperties.swift */,
+				0C83B4351EE0C13B0065D398 /* Album+CoreDataClass.swift */,
+				0C83B4361EE0C13B0065D398 /* Album+CoreDataProperties.swift */,
+				0C83B4371EE0C13B0065D398 /* Company+CoreDataClass.swift */,
+				0C83B4381EE0C13B0065D398 /* Company+CoreDataProperties.swift */,
+				0C83B4391EE0C13B0065D398 /* Geolocation+CoreDataClass.swift */,
+				0C83B43A1EE0C13B0065D398 /* Geolocation+CoreDataProperties.swift */,
+				0C83B43B1EE0C13B0065D398 /* Photo+CoreDataClass.swift */,
+				0C83B43C1EE0C13B0065D398 /* Photo+CoreDataProperties.swift */,
+				0C83B43D1EE0C13B0065D398 /* Post+CoreDataClass.swift */,
+				0C83B43E1EE0C13B0065D398 /* Post+CoreDataProperties.swift */,
+				0C83B43F1EE0C13B0065D398 /* User+CoreDataClass.swift */,
+				0C83B4401EE0C13B0065D398 /* User+CoreDataProperties.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		0CDDC25B1EDB1DAF0095BEBE = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +144,7 @@
 		0CDDC2661EDB1DAF0095BEBE /* Sherpany */ = {
 			isa = PBXGroup;
 			children = (
+				0C83B4321EE0C13B0065D398 /* Models */,
 				0C83B4261EE0BF690065D398 /* ViewControllers */,
 				0CDDC2671EDB1DAF0095BEBE /* AppDelegate.swift */,
 				0C83B42D1EE0C0230065D398 /* Protocols.swift */,
@@ -227,13 +277,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C83B4411EE0C13B0065D398 /* Address+CoreDataClass.swift in Sources */,
+				0C83B4451EE0C13B0065D398 /* Company+CoreDataClass.swift in Sources */,
+				0C83B4491EE0C13B0065D398 /* Photo+CoreDataClass.swift in Sources */,
+				0C83B4461EE0C13B0065D398 /* Company+CoreDataProperties.swift in Sources */,
 				0C83B42C1EE0BF770065D398 /* SherpanyViewController.swift in Sources */,
+				0C83B44A1EE0C13B0065D398 /* Photo+CoreDataProperties.swift in Sources */,
 				0C83B42B1EE0BF770065D398 /* MasterViewController.swift in Sources */,
+				0C83B4441EE0C13B0065D398 /* Album+CoreDataProperties.swift in Sources */,
+				0C83B4481EE0C13B0065D398 /* Geolocation+CoreDataProperties.swift in Sources */,
+				0C83B4431EE0C13B0065D398 /* Album+CoreDataClass.swift in Sources */,
 				0C83B42A1EE0BF770065D398 /* DetailViewController.swift in Sources */,
 				0C83B4311EE0C0AC0065D398 /* Sherpany.xcdatamodeld in Sources */,
 				0C83B42E1EE0C0230065D398 /* Protocols.swift in Sources */,
+				0C83B44B1EE0C13B0065D398 /* Post+CoreDataClass.swift in Sources */,
+				0C83B44D1EE0C13B0065D398 /* User+CoreDataClass.swift in Sources */,
+				0C83B44C1EE0C13B0065D398 /* Post+CoreDataProperties.swift in Sources */,
+				0C83B4471EE0C13B0065D398 /* Geolocation+CoreDataClass.swift in Sources */,
+				0C83B44E1EE0C13B0065D398 /* User+CoreDataProperties.swift in Sources */,
 				0CDDC2681EDB1DAF0095BEBE /* AppDelegate.swift in Sources */,
 				0CDDC2701EDB1DAF0095BEBE /* Sherpany.xcdatamodeld in Sources */,
+				0C83B4421EE0C13B0065D398 /* Address+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
