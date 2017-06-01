@@ -26,6 +26,10 @@
 		0C83B44C1EE0C13B0065D398 /* Post+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C83B43E1EE0C13B0065D398 /* Post+CoreDataProperties.swift */; };
 		0C83B44D1EE0C13B0065D398 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C83B43F1EE0C13B0065D398 /* User+CoreDataClass.swift */; };
 		0C83B44E1EE0C13B0065D398 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C83B4401EE0C13B0065D398 /* User+CoreDataProperties.swift */; };
+		0C83B4521EE0C1720065D398 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C83B4501EE0C1720065D398 /* CoreDataStack.swift */; };
+		0C83B4531EE0C1720065D398 /* PersistentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C83B4511EE0C1720065D398 /* PersistentStore.swift */; };
+		0C83B4571EE0C1880065D398 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C83B4551EE0C1880065D398 /* APIClient.swift */; };
+		0C83B4581EE0C1880065D398 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C83B4561EE0C1880065D398 /* Manager.swift */; };
 		0CDDC2681EDB1DAF0095BEBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDDC2671EDB1DAF0095BEBE /* AppDelegate.swift */; };
 		0CDDC2701EDB1DAF0095BEBE /* Sherpany.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0CDDC26E1EDB1DAF0095BEBE /* Sherpany.xcdatamodeld */; };
 		0CDDC2721EDB1DAF0095BEBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CDDC2711EDB1DAF0095BEBE /* Assets.xcassets */; };
@@ -63,6 +67,10 @@
 		0C83B43E1EE0C13B0065D398 /* Post+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0C83B43F1EE0C13B0065D398 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
 		0C83B4401EE0C13B0065D398 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0C83B4501EE0C1720065D398 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		0C83B4511EE0C1720065D398 /* PersistentStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentStore.swift; sourceTree = "<group>"; };
+		0C83B4551EE0C1880065D398 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		0C83B4561EE0C1880065D398 /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 		0CDDC2641EDB1DAF0095BEBE /* Sherpany.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sherpany.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CDDC2671EDB1DAF0095BEBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CDDC26F1EDB1DAF0095BEBE /* Sherpany.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sherpany.xcdatamodel; sourceTree = "<group>"; };
@@ -123,6 +131,24 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		0C83B44F1EE0C1720065D398 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				0C83B4501EE0C1720065D398 /* CoreDataStack.swift */,
+				0C83B4511EE0C1720065D398 /* PersistentStore.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		0C83B4541EE0C1880065D398 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0C83B4551EE0C1880065D398 /* APIClient.swift */,
+				0C83B4561EE0C1880065D398 /* Manager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		0CDDC25B1EDB1DAF0095BEBE = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +170,8 @@
 		0CDDC2661EDB1DAF0095BEBE /* Sherpany */ = {
 			isa = PBXGroup;
 			children = (
+				0C83B4541EE0C1880065D398 /* Services */,
+				0C83B44F1EE0C1720065D398 /* Persistence */,
 				0C83B4321EE0C13B0065D398 /* Models */,
 				0C83B4261EE0BF690065D398 /* ViewControllers */,
 				0CDDC2671EDB1DAF0095BEBE /* AppDelegate.swift */,
@@ -288,13 +316,17 @@
 				0C83B4481EE0C13B0065D398 /* Geolocation+CoreDataProperties.swift in Sources */,
 				0C83B4431EE0C13B0065D398 /* Album+CoreDataClass.swift in Sources */,
 				0C83B42A1EE0BF770065D398 /* DetailViewController.swift in Sources */,
+				0C83B4571EE0C1880065D398 /* APIClient.swift in Sources */,
 				0C83B4311EE0C0AC0065D398 /* Sherpany.xcdatamodeld in Sources */,
 				0C83B42E1EE0C0230065D398 /* Protocols.swift in Sources */,
 				0C83B44B1EE0C13B0065D398 /* Post+CoreDataClass.swift in Sources */,
 				0C83B44D1EE0C13B0065D398 /* User+CoreDataClass.swift in Sources */,
 				0C83B44C1EE0C13B0065D398 /* Post+CoreDataProperties.swift in Sources */,
 				0C83B4471EE0C13B0065D398 /* Geolocation+CoreDataClass.swift in Sources */,
+				0C83B4521EE0C1720065D398 /* CoreDataStack.swift in Sources */,
+				0C83B4581EE0C1880065D398 /* Manager.swift in Sources */,
 				0C83B44E1EE0C13B0065D398 /* User+CoreDataProperties.swift in Sources */,
+				0C83B4531EE0C1720065D398 /* PersistentStore.swift in Sources */,
 				0CDDC2681EDB1DAF0095BEBE /* AppDelegate.swift in Sources */,
 				0CDDC2701EDB1DAF0095BEBE /* Sherpany.xcdatamodeld in Sources */,
 				0C83B4421EE0C13B0065D398 /* Address+CoreDataProperties.swift in Sources */,
