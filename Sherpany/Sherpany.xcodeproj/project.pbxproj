@@ -30,6 +30,10 @@
 		0C83B4531EE0C1720065D398 /* PersistentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C83B4511EE0C1720065D398 /* PersistentStore.swift */; };
 		0C83B4571EE0C1880065D398 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C83B4551EE0C1880065D398 /* APIClient.swift */; };
 		0C83B4581EE0C1880065D398 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C83B4561EE0C1880065D398 /* Manager.swift */; };
+		0C83B45D1EE0C55A0065D398 /* MasterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C83B45A1EE0C55A0065D398 /* MasterTableViewCell.swift */; };
+		0C83B45E1EE0C55A0065D398 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C83B45B1EE0C55A0065D398 /* PhotoCollectionViewCell.swift */; };
+		0C83B45F1EE0C55A0065D398 /* PhotoCollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C83B45C1EE0C55A0065D398 /* PhotoCollectionViewHeader.swift */; };
+		0C83B4611EE0C5780065D398 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C83B4601EE0C5780065D398 /* Extensions.swift */; };
 		0CDDC2681EDB1DAF0095BEBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDDC2671EDB1DAF0095BEBE /* AppDelegate.swift */; };
 		0CDDC2701EDB1DAF0095BEBE /* Sherpany.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0CDDC26E1EDB1DAF0095BEBE /* Sherpany.xcdatamodeld */; };
 		0CDDC2721EDB1DAF0095BEBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CDDC2711EDB1DAF0095BEBE /* Assets.xcassets */; };
@@ -71,6 +75,10 @@
 		0C83B4511EE0C1720065D398 /* PersistentStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentStore.swift; sourceTree = "<group>"; };
 		0C83B4551EE0C1880065D398 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		0C83B4561EE0C1880065D398 /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		0C83B45A1EE0C55A0065D398 /* MasterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterTableViewCell.swift; sourceTree = "<group>"; };
+		0C83B45B1EE0C55A0065D398 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		0C83B45C1EE0C55A0065D398 /* PhotoCollectionViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewHeader.swift; sourceTree = "<group>"; };
+		0C83B4601EE0C5780065D398 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		0CDDC2641EDB1DAF0095BEBE /* Sherpany.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sherpany.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CDDC2671EDB1DAF0095BEBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CDDC26F1EDB1DAF0095BEBE /* Sherpany.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sherpany.xcdatamodel; sourceTree = "<group>"; };
@@ -149,6 +157,16 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		0C83B4591EE0C55A0065D398 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0C83B45A1EE0C55A0065D398 /* MasterTableViewCell.swift */,
+				0C83B45B1EE0C55A0065D398 /* PhotoCollectionViewCell.swift */,
+				0C83B45C1EE0C55A0065D398 /* PhotoCollectionViewHeader.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		0CDDC25B1EDB1DAF0095BEBE = {
 			isa = PBXGroup;
 			children = (
@@ -170,12 +188,14 @@
 		0CDDC2661EDB1DAF0095BEBE /* Sherpany */ = {
 			isa = PBXGroup;
 			children = (
+				0C83B4591EE0C55A0065D398 /* Views */,
 				0C83B4541EE0C1880065D398 /* Services */,
 				0C83B44F1EE0C1720065D398 /* Persistence */,
 				0C83B4321EE0C13B0065D398 /* Models */,
 				0C83B4261EE0BF690065D398 /* ViewControllers */,
 				0CDDC2671EDB1DAF0095BEBE /* AppDelegate.swift */,
 				0C83B42D1EE0C0230065D398 /* Protocols.swift */,
+				0C83B4601EE0C5780065D398 /* Extensions.swift */,
 				0CDDC28A1EDB1DC70095BEBE /* Support Files */,
 			);
 			path = Sherpany;
@@ -308,8 +328,11 @@
 				0C83B4411EE0C13B0065D398 /* Address+CoreDataClass.swift in Sources */,
 				0C83B4451EE0C13B0065D398 /* Company+CoreDataClass.swift in Sources */,
 				0C83B4491EE0C13B0065D398 /* Photo+CoreDataClass.swift in Sources */,
+				0C83B45D1EE0C55A0065D398 /* MasterTableViewCell.swift in Sources */,
+				0C83B45F1EE0C55A0065D398 /* PhotoCollectionViewHeader.swift in Sources */,
 				0C83B4461EE0C13B0065D398 /* Company+CoreDataProperties.swift in Sources */,
 				0C83B42C1EE0BF770065D398 /* SherpanyViewController.swift in Sources */,
+				0C83B4611EE0C5780065D398 /* Extensions.swift in Sources */,
 				0C83B44A1EE0C13B0065D398 /* Photo+CoreDataProperties.swift in Sources */,
 				0C83B42B1EE0BF770065D398 /* MasterViewController.swift in Sources */,
 				0C83B4441EE0C13B0065D398 /* Album+CoreDataProperties.swift in Sources */,
@@ -318,6 +341,7 @@
 				0C83B42A1EE0BF770065D398 /* DetailViewController.swift in Sources */,
 				0C83B4571EE0C1880065D398 /* APIClient.swift in Sources */,
 				0C83B4311EE0C0AC0065D398 /* Sherpany.xcdatamodeld in Sources */,
+				0C83B45E1EE0C55A0065D398 /* PhotoCollectionViewCell.swift in Sources */,
 				0C83B42E1EE0C0230065D398 /* Protocols.swift in Sources */,
 				0C83B44B1EE0C13B0065D398 /* Post+CoreDataClass.swift in Sources */,
 				0C83B44D1EE0C13B0065D398 /* User+CoreDataClass.swift in Sources */,
