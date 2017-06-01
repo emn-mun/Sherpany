@@ -22,9 +22,9 @@ class PhotoCollectionViewCell: UICollectionViewCell {
             photoImageView.topAnchor.constraint(equalTo: topAnchor),
             photoImageView.trailingAnchor.constraint(equalTo: trailingAnchor),
             photoImageView.bottomAnchor.constraint(equalTo: bottomAnchor)
-        ])
+            ])
     }
-
+    
     func setDetailCellWith(photo: Photo) {
         photoImageView.loadImageUsingCacheWithURLString(photo.thumbnailUrl!, placeholder: UIImage(named: "placeholder"))
     }

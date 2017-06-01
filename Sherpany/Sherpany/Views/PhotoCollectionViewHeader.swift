@@ -1,7 +1,7 @@
 import UIKit
 
 class PhotoCollectionViewHeader: UICollectionReusableView {
-
+    
     let titleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -12,7 +12,7 @@ class PhotoCollectionViewHeader: UICollectionReusableView {
     }()
     
     let showHidePhotos: UILabel = {
-       let label = UILabel()
+        let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.body)
         label.font = UIFont.italicSystemFont(ofSize: 10)
