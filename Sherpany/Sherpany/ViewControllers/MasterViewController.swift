@@ -5,6 +5,14 @@ class MasterViewController: SherpanyViewController {
     
     let tableView = UITableView()
     
+    var searchController: UISearchController = {
+        let searchController = UISearchController(searchResultsController: nil)
+        searchController.hidesNavigationBarDuringPresentation = false
+        searchController.dimsBackgroundDuringPresentation = false
+        
+        searchController.searchBar.barTintColor = .white
+        return searchController
+    }()
     fileprivate let masterCellID = "masterCellID"
     public weak var splitViewDelegate: SherpanySplitViewProtocol?
     var searchString: String? = nil
@@ -15,6 +23,7 @@ class MasterViewController: SherpanyViewController {
         navigationItem.title = "Challenge Accepted!"
         setupTableView()
         updateTableView()
+        setupSearchController()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -41,6 +50,13 @@ class MasterViewController: SherpanyViewController {
             ])
     }
     
+    private func setupSearchController() {
+        searchController.searchResultsUpdater = self
+        searchController.searchBar.delegate = self
+        searchController.delegate = self
+        definesPresentationContext = true
+        tableView.tableHeaderView = searchController.searchBar
+    }
     
     fileprivate func updateTableView() {
         do {
@@ -146,6 +162,36 @@ extension MasterViewController: NSFetchedResultsControllerDelegate {
     
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         tableView.beginUpdates()
+    }
+}
+
+extension MasterViewController: UISearchControllerDelegate, UISearchResultsUpdating, UISearchBarDelegate {
+    func updateSearchResults(for searchController: UISearchController) {
+        NSObject.cancelPreviousPerformRequests(withTarget: self, selector: #selector(searchForString), object: nil)
+        perform(#selector(searchForString), with: nil, afterDelay: 0.5)
+        if let string = searchController.searchBar.text {
+            self.searchString = string
+            if let str = searchString, !str.isEmpty {
+                fetchedResultController.fetchRequest.predicate = NSPredicate(format: "title CONTAINS[cd] %@", searchString!)
+            } else {
+                fetchedResultController.fetchRequest.predicate = nil
+            }
+            
+            print(string)
+            updateTableView()
+        }
+    }
+    
+    func searchForString(string: String) {
+        self.updateTableView()
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchController.searchBar.resignFirstResponder()
+    }
+    
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        searchController.searchBar.resignFirstResponder()
     }
 }
 
