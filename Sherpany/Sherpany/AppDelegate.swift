@@ -12,6 +12,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let masterViewController = MasterViewController()
         let detailViewController = DetailViewController()
+        masterViewController.splitViewDelegate = detailViewController
         
         let masterNavigationViewController = UINavigationController(rootViewController: masterViewController)
         let detailNavigationViewController = UINavigationController(rootViewController: detailViewController)
@@ -23,7 +24,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window?.rootViewController = splitScreenViewController
         
+        CoreDataStack.sharedInstance.applicationDocumentsDirectory()
+        
         return true
+    }
+    
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        Manager.shared.fetchAllDataWithCompletion {
+            DispatchQueue.main.async {
+                let alert = UIAlertController(title: "Photos Fetched", message: "Latest photos successfully retrieved", preferredStyle: UIAlertControllerStyle.alert)
+                let action = UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil)
+                alert.addAction(action)
+                self.window?.rootViewController?.present(alert, animated: true, completion: nil)
+            }
+        }
+    }
+    
+    func applicationWillTerminate(_ application: UIApplication) {
+        CoreDataStack.sharedInstance.saveContext()
     }
 }
 
